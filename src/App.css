@@ -23,10 +23,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.Hero {
-  font-size: x-large;
-  color: blue;
-}
+
 .App-link {
   color: #61dafb;
 }
@@ -37,5 +34,80 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column*/
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.header {
+  grid-column: 1 / 4; /* Spans all 3 columns */
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  grid-column: 2 / 3; /* Main content in the middle column */
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.footer {
+  grid-column: 1 / 4;
+  background-color: lightcoral;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Container for the navbar */
+.navbar {
+  padding: 10px;
+}
+
+/* Unordered list (nav items container) */
+.nav-list {
+  display: flex; /* Make the list items align horizontally */
+  list-style: none; /* Remove the default list bullets */
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+/* Nav items (list items) */
+.nav-list li {
+  margin-right: 20px; /* Add space between items */
+}
+
+/* Links inside nav items */
+.nav-list li a {
+  color: rgb(20, 16, 16);
+  text-decoration: none; /* Remove underlines from links */
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+/* Optional: Hover effect */
+.nav-list li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* 1 column layout */
+    gap: 10px; /* Smaller gap for smaller screens */
+  }
+
+  .header,
+  .main,
+  .footer {
+    grid-column: 1 / 2; /* All items span across the single column */
   }
 }
