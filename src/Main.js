@@ -1,11 +1,17 @@
 import React from 'react';
+import Hero from './Hero.js';
+import Specials from './Specials.js';
+import Testimonials from './Testimonials.js';
+import Description from './Description.js';
 
 const Main = () => {
   return (
-    <div>
-      <h1>Little Lemon</h1>
-      <h2>Chicago</h2>
-    </div>
+    <main id="home">
+      <Hero />
+      <Specials />
+      <Testimonials />
+      <Description />
+    </main>
   );
 };
 
