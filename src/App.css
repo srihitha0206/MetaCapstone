@@ -485,3 +485,49 @@ h2 {
 .site-footer-contact svg {
   margin-right: 0.5rem;
 }
+
+.booking-form {
+  align-items: center;
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: repeat(2, minmax(12.5rem, 1fr));
+  padding: 0 2rem 2rem;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  width: 150px; /* Adjust this width as needed */
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.reservations {
+  min-height: calc(100vh - 24.25rem);
+}
+
+.reservations h2 {
+  color: #495e57;
+  height: -webkit-max-content;
+  height: max-content;
+  padding: 1.5rem 2rem;
+  width: 100%;
+}
+.reservations form button {
+  grid-column: 1 / span 2;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: max-content;
+}
