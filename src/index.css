@@ -66,3 +66,16 @@ main {
   max-width: 61.75rem;
   width: 90%;
 }
+
+input,
+select {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.375rem;
+  color: #495e57;
+  cursor: pointer;
+  height: 2.5rem;
+  outline: none;
+  padding: 0 0.5rem;
+  width: 100%;
+}
