@@ -50,7 +50,7 @@ const BookingForm = () => {
   return (
     <main id="home">
       <div className="reservations">
-        <h2>Table Reservation</h2>
+        <h2>table reservation</h2>
         <form onSubmit={formik.handleSubmit} className="booking-form">
           <div className="form-group">
             <label htmlFor="date">Choose date</label>
