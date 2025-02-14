@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -11,9 +12,9 @@ const Hero = () => {
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <a className="button-primary" href="">
+          <Link to="/booking-form" className="button-primary">
             Reserve a table
-          </a>
+          </Link>
         </div>
         <img src="restauranfood.jpg" alt="logo" className="hero-image"></img>
       </div>

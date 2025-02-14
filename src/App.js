@@ -19,6 +19,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/booking-form" element={<BookingForm />} />
           <Route path="/reservations" element={<BookingForm />} />
           <Route path="/confirmed" element={<ConfirmedBooking />} />
         </Routes>
